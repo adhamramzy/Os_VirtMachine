@@ -156,8 +156,8 @@ void execy(vector<string> tokenn) {
 
         // convert to char, excecvp to replace process w command
         vector<char*> args;
-        for (auto& s : tokenn)
-            args.push_back(const_cast<char*>(s.c_str()));
+        for (size_t i = 0; i < tokenn.size(); ++i)
+            args.push_back(const_cast<char*>(tokenn[i].c_str()));
         args.push_back(nullptr);
 
         execvp(args[0], args.data());
