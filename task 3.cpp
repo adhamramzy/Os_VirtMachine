@@ -89,7 +89,7 @@ int simage(const vector<int>& pages, int numframes) {
 
     return faults;
 }
-
+    
 int main(int argc, char* argv[]) {
     // choosefilename
     string fname;
